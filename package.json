@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@types/node": "^14.0.13",
+    "jimp": "^0.13.0",
+    "typescript": "^3.9.5"
+  }
+}

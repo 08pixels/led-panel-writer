@@ -60,13 +60,12 @@ var LEDPanel = (function () {
         var counter = 0;
         var tempValue = [];
         byteList.forEach(function (value) {
-            if (counter > 3) {
+            if (++counter == 4) {
                 counter = 0;
                 pixelList.push(tempValue);
                 tempValue = [];
             }
             tempValue.push(value);
-            counter++;
         });
         pixelList.forEach(function () {
             var line = pixelList.splice(0, _this.width);

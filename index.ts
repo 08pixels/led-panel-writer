@@ -26,13 +26,13 @@ class LEDPanel {
         let counter = 0;
         let tempValue: Array<number> = [];
         byteList.forEach((value) => {
-            if(counter > 3){
+
+            if(++counter == 4){
                 counter = 0;
                 pixelList.push(tempValue);
                 tempValue = [];
             }
             tempValue.push(value);
-            counter++;
         });
 
         pixelList.forEach(() => {
